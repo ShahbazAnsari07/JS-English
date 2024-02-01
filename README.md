@@ -1,2 +1,2 @@
 # JS-English
-A repo which contains JavaScript Code.
+A repository which contains JavaScript Code.
