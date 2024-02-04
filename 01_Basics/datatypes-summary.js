@@ -37,5 +37,31 @@ const myFunction = function(){
 }
 
 
-console.log(typeof bigNumber);
-console.log(typeof anotherId);
+// console.log(typeof bigNumber);
+// console.log(typeof anotherId);
+
+
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Stack (Primitive), Heap(Non-Primitive)
+
+let myFirstname = "Shahbaz";
+
+let anotherName = myFirstname
+anotherName = "Ansari";
+
+console.log(myFirstname);
+console.log(anotherName);
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "shahbaz@google.com"
+console.log(userOne.email);
+console.log(userTwo.email);
