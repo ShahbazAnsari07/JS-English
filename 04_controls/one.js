@@ -9,7 +9,7 @@
 // }
 
 // <, >, <=, >=, ==, !=, ===, !==
-
+// === it does not only check the value but also the type.
 // const score = 200
 
 // if (score > 100) {
