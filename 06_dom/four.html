@@ -26,9 +26,22 @@
     }
     addOptiLanguage("Ruby")
 
+
     // Edit
     const secondLang = document.querySelector("li:nth-child(2)")
     //secondLang.innerHTMl = "Mojo"
+    const newli = document.createElement('li')
+    newli.textContent = "Mojo"
+    secondLang.replaceWith(newli) 
+
+    //edit
+    const firstLang = document.querySelector("li:first-child")
+    firstLang.outerHTML = '<li>TypeScript</li>'
+
+    //remove
+    const lastLang = document.querySelector("li:last-child")
+    lastLang.remove()
+    
     
 </script>
 </html>
