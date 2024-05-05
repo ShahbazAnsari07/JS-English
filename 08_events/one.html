@@ -11,15 +11,38 @@
     <div>
         <ul id="images">
             <li><img width="200px" id="photoshop" src="https://images.pexels.com/photos/2600964/pexels-photo-2600964.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="photoshop"></li>
-            <li><img width="200px" id="photoshop" src="https://images.pexels.com/photos/402028/pexels-photo-402028.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></li>
+            <li><img width="200px" id="japan" src="https://images.pexels.com/photos/402028/pexels-photo-402028.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></li>
             <li><img width="200px" id="river" src="https://images.pexels.com/photos/709552/pexels-photo-709552.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></li>
             <li><img width="200px" id="owl" src="https://images.pexels.com/photos/1526404/pexels-photo-1526404.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></li>
-            <li><img width="200px" id="owl" src="https://images.pexels.com/photos/2989625/pexels-photo-2989625.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></li>
+            <li><img width="200px" id="prayer" src="https://images.pexels.com/photos/2989625/pexels-photo-2989625.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></li>
             <li><a  style="color: aliceblue;"https://google.com" id="google">Google</a></li>
         </ul>
     </div>
 </body>
 <script>
+    // document.getElementById('owl').onclick = function(){
+    //     alert("owl clicked")
+    // }
+
+    // attachEvent()
+    // jQuery - on
+    // type, timestamp, defaultPrevented
+    // target, toElement, srcElement, currentTarget,
+    // clentX, clientY, screenX, screenY
+    // altkey, ctrlkey, shiftkey, keyCode
     
+    // false -> bubbling
+    // true -> capturing
+
+    document.getElementById('images').addEventListener('click', function(e){
+        console.log("clicked inside the ul");
+    }, false)
+
+    document.getElementById('owl').addEventListener('click', function(e){
+        console.log("owl clicked");
+        e.stopPropagation()
+    }, false)
+
+
 </script>
 </html>
